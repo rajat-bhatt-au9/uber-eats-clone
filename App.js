@@ -1,16 +1,18 @@
 import * as React from "react";
-import { View, Text } from "react-native";
+import {
+  View,
+  Text,
+  SafeAreaView,
+  SafeAreaViewBase,
+  StatusBar,
+} from "react-native";
+import HeaderTabs from "./components/HeaderTabs";
+import Home from "./screens/Home";
 
 export default function App() {
   return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <Text>Universal React with Expo</Text>
+    <View style={{ paddingVertical: 40, backgroundColor: "#eee", flex: 1 }}>
+      <Home />
     </View>
   );
 }
